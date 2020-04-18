@@ -1,0 +1,120 @@
+#slide-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+#slide-wrapper button{
+  width: 3%;
+  margin: 5%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.next{
+ position: fixed;
+ right: 0;
+ bottom: 5%;
+}
+
+.prev{
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+ }
+
+ #slide-wrapper button img:active{
+  transition: .3s;
+  background-color: teal;
+}
+
+#slide-wrapper button img{
+  width: 100%;
+}
+.slide-container-active{
+  display: grid;
+  margin: 5px auto 20px auto;
+  grid-template-columns: auto auto ;
+  grid-gap: 5px;
+  width: 55%;
+  padding: 5px;
+}
+.slide-container-active img{
+  width: 100%;
+  cursor: pointer;
+}
+
+#slide-description-container{
+  width: 35%;
+  margin: -5px auto auto auto;
+  border-bottom: 3px solid azure;
+  color: azure;
+  text-align: center;
+}
+
+main ul{
+  display:none;
+}
+
+.slide-container-active li:last-child{
+  display:none;
+}
+
+#m-slide-button-container{
+  display: none;
+}
+
+/** Mobile Landscape **/
+@media screen and (max-width: 1032px){
+  
+  #slide-wrapper button{
+    display: none;
+  }
+  
+  .next{
+   position: relative;
+   right: 0;
+   bottom: 5%;
+  }
+  
+  .prev{
+    position: relative;
+    bottom: 5%;
+    left: 0;
+   }
+
+  .slide-container-active{
+    grid-template-columns: auto auto;
+    grid-gap: 7px;
+    width: 94%;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  #slide-description-container{
+    width: 40%;
+    font-size: .6em;
+  }
+
+  #m-slide-button-container{
+    display: inline-flex;
+  }
+
+  #m-slide-button-container button img{
+    width: 40%;
+    margin: auto;
+  }
+
+  #m-slide-button-container button{
+    display: inline-flex;
+    width: 25%;
+    margin: auto;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #m-slide-button-container button img:active{
+    background-color: teal;
+  }
+}

@@ -1,0 +1,48 @@
+.highlight{
+  width: 100%;
+}
+
+#highlight-container{
+  width: 45%;
+  height: auto;
+  display: none;
+  margin: auto auto 25px auto;
+  color: azure;
+}
+
+#artist-name{
+  padding: 3px;
+  border-left: 4px solid #6397a8;
+}
+
+#piece-description{
+  padding: 3px;
+  border-left: 4px solid #6397a8;
+}
+
+#thumbnail-container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, minmax(auto,1fr));
+  grid-auto-rows: auto;
+  width: 95%;
+  margin: 20px auto auto auto;
+}
+
+#thumbnail-container img{
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1033px){
+  #thumbnail-container{
+    width: 90%;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+  }
+
+  #highlight-container{
+    width: 100%;
+    
+  }
+}

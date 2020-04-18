@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav_styles.css">
+  <link rel="stylesheet" href="css/slideshow_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/nav_scripts.js"></script>
+  <script src="scripts/slideshow_scripts.js"></script>
+  <title>Wright Student Art Gallery</title>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <img id="logo" src = "icons/WSAG_logo.png" alt ="Wright Student Art Gallery Logo">
+      <button><img src = "icons/hamburger_exit.png" alt = "hamburger_exit"></button>
+      <button id="burger"><img src="icons/hamburger_menu.png" alt = "hamburger_menu"></button>
+      <img id ="mobile-logo" src = "icons/WSAG_logo(mobile).png" alt = "Wright Student Art Gallery Logo(Mobile)">
+    </header>
+  
+   <ul>
+      <li>Home</li>
+
+      <li>
+        Drawing
+        <a href ="generaldrawing.html">General Drawing - 131</a>
+        <a href ="advanceddrawing.html">Advanced Drawing - 132</a>
+        <a href="figuredrawing.html">Figure Drawing - 142</a> 
+      </li>
+
+      <li>
+        Design
+        <a href ="2Ddesign.html">2D Design - 144</a>
+        <a href ="3Ddesign.html">3D Design - 145</a> 
+      </li>
+
+      <li>
+        Painting
+       <a href ="watercolor.html">Watercolor - 163</a>
+       <a href ="oilpainting.html">Oil Painting - 166</a>
+       <a href ="advancedpainting.html">Advanced Painting - 167</a> 
+     </li>
+
+      <li>
+        Print Making
+        <a href ="printmaking.html">Print Making - 126 & 127</a>
+      </li>
+
+      <li>
+         Photo
+        <a href ="photography.html">Student Photography</a>
+      </li>
+
+      <li>
+        Sculpture
+        <a href ="sculpture.html">Sculpture - 198</a>
+        <a href="independentsculpprojv.html"> Independent Sculpture Projects</a>  
+      </li>
+
+      <li>About Us</li>
+     </ul>
+   </nav>
+
+  <main>
+    <div id="slide-description-container">
+      <h1>Drawing / Design</h1>
+    </div>
+
+    <div id="slide-wrapper">
+      <button class="prev"><img src="icons/previous_slide.png" alt="previous slide"></button>
+
+      <ul id="first-slide" class="slide-container-active">
+        <li><a href="figuredrawing.html"><img src="drawings/Saffron-Krause-Drawing2.jpg" title="Saffron Joy Krause" alt="Pastel on Paper 9.5x12"></a></li>
+
+        <li><a href ="2Ddesign.html"><img src="designs/Humberto-Ayala-Desing1.jpg" title="Humberto Ayala" alt="Ink on Poster 18x21"></a></li>
+
+        <li><a href ="2Ddesign.html"><img src="designs/Victoria-Salgado-Design1.jpg" title="Victoria Salgado" alt="Construction Paper on Poster, 9x12"></a></li>
+
+        <li><a href ="2Ddesign.html"><img src="designs/Quiana-Davis-Design1.jpg" title="Quiana M. Davis" alt="Ink on Poster 18x21"></a></li>
+
+        <li><a href ="2Ddesign.html"><img src="designs/Klea-Sinani-Design1.jpg" title="Klea Sinani" alt="Paper on Poster, 18x21"></a></li>
+
+        <li><a href="figuredrawing.html"><img src="drawings/Saffron-Krause-Drawing1.jpg" title="Saffron Joy Krause" alt="Pastel on Paper 9.5x12"></a></li>
+
+        <li>Drawing / Desgin</li>
+      </ul>
+  
+      <ul>
+        <li><a href ="advancedpainting.html"><img src="paintings/Anna-Mitera-Painting1.jpg" title="Anna Mitera" alt="Acrylic on Canvas, 24x36"></a></li>
+
+        <li><a href ="oilpainting.html"><img src="paintings/Jenny-Franzen-Painting1.jpg" title="Jenny Franzen" alt="Acrylic on Canvas, 12x12"></a></li>
+
+        <li><a href ="oilpainting.html"><img src="paintings/Christina-Heyworth-Painting1.jpg" title="Christina Heyworth" alt="Acrylic on Canvas, 18x21"></a></li>
+
+        <li><a href ="oilpainting.html"><img src="paintings/Christina-Heyworth-Painting2.jpg" title="Christina Heyworth" alt="Acrylic on Canvas, 18x21"></a></li>
+
+        <li><span>Painting / Print Making</span></li>
+      </ul>
+  
+      <ul id="last-slide">
+        <li><a href ="photography.html"><img src="photographs/Brook-Garbie-Photo1.jpg" title="Brook Garbie" alt="Untitled"></a></li>
+
+        <li><a href ="photography.html"><img src="photographs/Kristin-Mazur-Photo1.jpg" title="Kristin Mazur" alt="Untitled"></a></li>
+
+        <li><a href ="sculpture.html"><img src="sculptures/Javier-Jasso-Sculpture1.jpg" title="Javier Jasso" alt="Untitled"></a></li>
+
+        <li><a href ="photography.html"><img src="photographs/Kristin-Mazur-Photo2.jpg" title="Kristin Mazur" alt="Untitled"></a></li>
+
+        <li><a href ="sculpture.html"><img src="sculptures/Victoria-Salgado-Sculpture1.jpg" title="Victoria Salgado" alt="Untitled"></a></li>
+
+        <li><a href ="sculpture.html"><img src="sculptures/Ester-Agyei-Sculpture1.jpg" title="Ester Agyei" alt="Untitled"></a></li>
+        <li>Photography / Sculpture</li>
+        
+      </ul>
+
+      <button class="next"><img src="icons/next_slide.png" alt="previous slide"></button>
+    </div>
+    <div id="m-slide-button-container">
+      <button class="prev"><img src="icons/previous_slide.png" alt="previous slide"></button>
+      <button class="next"><img src="icons/next_slide.png" alt="previous slide"></button>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Want to see your artwork here?</h3>
+    <p>follow the instructions <a href="about.html">here</a></p>
+  </footer>
+</body>
+</html>
