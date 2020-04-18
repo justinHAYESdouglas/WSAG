@@ -100,7 +100,7 @@ header button{
   }
 
   #mobile-logo{
-    display: block;
+    display: flex;
     width: 19%;
     margin: auto;
     padding: 5px;
